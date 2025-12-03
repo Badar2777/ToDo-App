@@ -1,70 +1,96 @@
-# Getting Started with Create React App
+This project focuses on component architecture best practices, props passing, and reusability, while delivering an elegant glass-morphism UI.
+It includes a complete task management system featuring categories, editing, deleting, completion toggles, filters, and localStorage persistence.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+ Features
+ Functional
 
-## Available Scripts
+Add tasks with categories
 
-In the project directory, you can run:
+Edit tasks in a modal
 
-### `npm start`
+Delete tasks instantly
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Mark tasks completed / pending
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Filter by categories or completion state
 
-### `npm test`
+Persistent LocalStorage saving
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Animated progress bar showing completion %
 
-### `npm run build`
+ UI/UX
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Futuristic glass-morphism UI
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Lucide icons for all actions
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Smooth hover + transition animations
 
-### `npm run eject`
+Responsive on all devices
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Clean and minimal layout
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Component Architecture
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+The app is built with clean and highly reusable components:
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+src/
+ ├── App.jsx        → global state + logic + localStorage
+ ├── components/
+ │     ├── TodoList.jsx  → filters, add, progress bar, mapping list
+ │     └── TodoItem.jsx  → icons, edit modal, animations
+ └── index.css
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+App.jsx handles all logic
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+TodoList.jsx displays list + filtering + UI
 
-### Code Splitting
+TodoItem.jsx manages each individual task
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+This separation ensures clean structure, scalability, and reusability.
 
-### Analyzing the Bundle Size
+Tech Stack
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+React.js
 
-### Making a Progressive Web App
+Tailwind CSS
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+Lucide Icons
 
-### Advanced Configuration
+LocalStorage API
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+ Learning Outcomes
 
-### Deployment
+Master component hierarchy and props passing
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+Build reusable React UI components
 
-### `npm run build` fails to minify
+Manage state and lifecycle with hooks
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Use LocalStorage for data persistence
+
+Implement category-based filtering
+
+Apply modern styling with Tailwind CSS
+
+Create animated UX components
+
+Screenshots
+<img width="1600" height="900" alt="image" src="https://github.com/user-attachments/assets/82b1b8c8-6de5-4013-adc3-ebdd57c65fda" />
+<img width="1600" height="900" alt="image" src="https://github.com/user-attachments/assets/458d9492-6a69-4c65-94ad-c4bfe8d99158" />
+<img width="1600" height="900" alt="image" src="https://github.com/user-attachments/assets/77f33239-84af-465c-8352-92f0df870335" />
+<img width="1600" height="900" alt="image" src="https://github.com/user-attachments/assets/36e4d06d-737e-406d-a91f-5fe49388cf30" />
+<img width="1600" height="900" alt="image" src="https://github.com/user-attachments/assets/b151f182-71f4-41a1-a4fd-f12923249f5d" />
+<img width="1600" height="900" alt="image" src="https://github.com/user-attachments/assets/e1fbc936-f667-405a-b3c9-24485d4a11f5" />
+<img width="1600" height="900" alt="image" src="https://github.com/user-attachments/assets/1210a396-ae4e-4957-bbad-9382f4e42c42" />
+<img width="1600" height="900" alt="image" src="https://github.com/user-attachments/assets/6e542170-5a8d-4615-b58d-f6464939cb50" />
+<img width="1600" height="900" alt="image" src="https://github.com/user-attachments/assets/bb2b2fbe-fc56-436a-b2d0-b37af49c69d1" />
+
+
+
+Installation
+git clone https://github.com/yourusername/advanced-react-todo.git
+cd advanced-react-todo
+npm install
+npm run dev
